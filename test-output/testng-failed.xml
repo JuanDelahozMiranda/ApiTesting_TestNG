@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]">
+  <parameter name="orden2" value="/99"/>
+  <parameter name="orden1" value="/77"/>
+  <test thread-count="5" name="TestNG_Api(failed)">
+    <groups>
+      <run>
+        <include name="sanity"/>
+        <exclude name="san"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestSuit1">
+        <methods>
+          <include name="RequestGetSuccess" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestSuit1 -->
+    </classes>
+  </test> <!-- TestNG_Api(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

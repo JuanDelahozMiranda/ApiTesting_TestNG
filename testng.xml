@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite">
+
+    <parameter name="orden1" value="/77"></parameter>
+    <parameter name="orden2" value="/99"></parameter>
+    <test name="TestNG_Api">
+        <groups>
+            <run>
+                <include name="sanity"/>
+                <exclude name="san"></exclude>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestSuit1"/>
+        </classes>
+
+
+    </test>
+</suite>
